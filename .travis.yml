@@ -1,9 +1,9 @@
-dist: trusty
+dist: focal
 
 language: java
 
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 script:
   - ./gradlew check
@@ -17,7 +17,3 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
